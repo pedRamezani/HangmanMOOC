@@ -2,21 +2,20 @@
 * text=auto
 
 # Unity
-* -text
 *.cginc   text
 *.cs      diff=csharp text
 *.shader  text
 
 # Unity YAML
-*.mat merge=unityyamlmerge
-*.anim merge=unityyamlmerge
-*.unity merge=unityyamlmerge
-*.prefab merge=unityyamlmerge
-*.physicMaterial2D merge=unityyamlmerge
-*.physicMaterial merge=unityyamlmerge
-*.asset merge=unityyamlmerge
-*.meta merge=unityyamlmerge
-*.controller merge=unityyamlmerge
+*.mat merge=unityyamlmerge -text
+*.anim merge=unityyamlmerge -text
+*.unity merge=unityyamlmerge -text
+*.prefab merge=unityyamlmerge -text
+*.physicMaterial2D merge=unityyamlmerge -text
+*.physicMaterial merge=unityyamlmerge -text
+*.asset merge=unityyamlmerge -text
+*.meta merge=unityyamlmerge -text
+*.controller merge=unityyamlmerge -text
 
 # Unity LFS
 *.cubemap       filter=lfs diff=lfs merge=lfs -text
