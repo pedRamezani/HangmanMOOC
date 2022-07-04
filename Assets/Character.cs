@@ -12,6 +12,7 @@ public class Character : MonoBehaviour
     void Start()
     {
         text.text = "";
+        text.richText = true;
     }
 
     void Update()
@@ -31,8 +32,8 @@ public class Character : MonoBehaviour
     {
         if (text.text == "")
         {
-            text.text = character.ToString().ToUpper();
-            text.alpha = 0.5f;
+            text.text = "<i>" + character.ToString().ToUpper() + "</i>";
+            text.alpha = 0.8f;
         }
     }
 }
