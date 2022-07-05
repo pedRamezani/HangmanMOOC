@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Windows.Speech;
 
 public class Character : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class Character : MonoBehaviour
     void Start()
     {
         text.text = "";
+        //manager.dictationRecognizer.DictationResult += ShowVoiceLetter;
     }
 
     void Update()
@@ -23,6 +25,7 @@ public class Character : MonoBehaviour
                 text.text = character.ToString().ToUpper();
                 manager.leftCharacters--;
                 manager.win = true;
+                
             }
         }
     }
@@ -33,6 +36,17 @@ public class Character : MonoBehaviour
         {
             text.text = character.ToString().ToUpper();
             text.alpha = 0.5f;
+        }
+    }
+
+    public void ShowVoiceLetter()
+    {
+        if (text.text == "")
+        {
+            text.text = character.ToString().ToUpper();
+            text.alpha = 1f;
+            manager.leftCharacters--;
+            manager.win = true;
         }
     }
 }
