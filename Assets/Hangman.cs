@@ -49,9 +49,9 @@ public class Hangman : MonoBehaviour
 
         dictationRecognizer = new DictationRecognizer(ConfidenceLevel.High, DictationTopicConstraint.Dictation);
 
-        dictationRecognizer.DictationHypothesis += (text) =>
+        dictationRecognizer.DictationResult += (text, confidence) =>
         {
-            Debug.LogFormat("Dictation hypothesis: {0}", text);
+            Debug.LogFormat("Dictation hypothesis: {0} with confidence: {1}", text, confidence);
             Guess(text[0]);
             for (int i = 0; i < wordParent.childCount; i++)
             {

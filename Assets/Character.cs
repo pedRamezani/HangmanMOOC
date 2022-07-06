@@ -30,7 +30,7 @@ public class Character : MonoBehaviour
 
     public void Guess(string c)
     {
-        if (text.text == "" && c.ToLower()[0] == character) 
+        if (text.text == "" && c.ToLower()[0] == character.ToString().ToLower()[0]) 
             {
                 text.text = character.ToString().ToUpper();
                 manager.leftCharacters--;
