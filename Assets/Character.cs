@@ -17,7 +17,7 @@ public class Character : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(character.ToString().ToLower())) 
+        if (Input.GetKeyDown(character.ToString().ToLower()) && !Input.GetKeyDown(KeyCode.Space)) 
         {
             if (text.text == "") 
             {
@@ -26,6 +26,16 @@ public class Character : MonoBehaviour
                 manager.win = true;
             }
         }
+    }
+
+    public void Guess(string c)
+    {
+        if (text.text == "" && c.ToLower()[0] == character.ToString().ToLower()) 
+            {
+                text.text = character.ToString().ToUpper();
+                manager.leftCharacters--;
+                manager.win = true;
+            }
     }
 
     public void ShowCharacter()

@@ -53,6 +53,10 @@ public class Hangman : MonoBehaviour
         {
             Debug.LogFormat("Dictation hypothesis: {0}", text);
             Guess(text[0]);
+            for (int i = 0; i < wordParent.childCount; i++)
+            {
+                wordParent.GetChild(i).GetComponent<Character>().Guess(text);
+            }
         };
     }
 
@@ -63,14 +67,20 @@ public class Hangman : MonoBehaviour
             //Restart
             if (leftCharacters == 0) SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         } 
-        else if (Input.GetKeyDown(KeyCode.Space) && dictationRecognizer.Status == SpeechSystemStatus.Stopped) 
-        {
-            Debug.Log("Hi");
-            dictationRecognizer.Start();
+        else if (Input.GetKeyDown(KeyCode.Space)) 
+        {   
+            if (dictationRecognizer.Status == SpeechSystemStatus.Stopped) 
+            {
+                Debug.Log("Hi");
+                dictationRecognizer.Start();
+            }
         }
-        else if (Input.GetKeyUp(KeyCode.Space) && dictationRecognizer.Status == SpeechSystemStatus.Running) 
+        else if (Input.GetKeyUp(KeyCode.Space)) 
         {
-            dictationRecognizer.Stop();
+            if (dictationRecognizer.Status == SpeechSystemStatus.Running) 
+            {
+                dictationRecognizer.Stop();
+            }
         }
         else if (Input.anyKeyDown) 
         {
