@@ -71,7 +71,6 @@ public class Hangman : MonoBehaviour
         {   
             if (dictationRecognizer.Status == SpeechSystemStatus.Stopped) 
             {
-                Debug.Log("Hi");
                 dictationRecognizer.Start();
             }
         }
@@ -100,27 +99,27 @@ public class Hangman : MonoBehaviour
         if (!triedCharacters.Contains(char.ToLower(input)))
         {
             triedCharacters.Add(char.ToLower(input));
+            triedText.text = "";
+            foreach (char letter in alphabet) 
+            {
+                bool strikethrough = triedCharacters.Contains(char.ToLower(letter));
+                if (triedText.text != "") 
+                {
+                        triedText.text += ", ";
+                }
+                if (strikethrough) 
+                {
+                    triedText.text += "<color=#f44336>";
+                }
+                triedText.text += letter.ToString();
+                if (strikethrough) 
+                {
+                    triedText.text += "</color>";
+                }
+            }
+            
             if (!win) 
             {
-                triedText.text = "";
-                foreach (char letter in alphabet) 
-                {
-                    bool strikethrough = triedCharacters.Contains(char.ToLower(letter));
-                    if (triedText.text != "") 
-                    {
-                            triedText.text += ", ";
-                    }
-                    if (strikethrough) 
-                    {
-                        triedText.text += "<color=black>";
-                    }
-                    triedText.text += letter.ToString();
-                    if (strikethrough) 
-                    {
-                        triedText.text += "</color>";
-                    }
-                }
-
                 hangmanFrame++;
                 if (hangmanFrame >= MAX_FRAMES) 
                 {

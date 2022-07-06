@@ -17,6 +17,7 @@ public class Character : MonoBehaviour
 
     void Update()
     {
+        // TODO: Fix Fission => not working correctly
         if (Input.GetKeyDown(character.ToString().ToLower()) && !Input.GetKeyDown(KeyCode.Space)) 
         {
             if (text.text == "") 
@@ -43,7 +44,7 @@ public class Character : MonoBehaviour
         if (text.text == "")
         {
             text.text = "<i>" + character.ToString().ToUpper() + "</i>";
-            text.alpha = 0.8f;
+            text.alpha = 0.5f;
         }
     }
 }
