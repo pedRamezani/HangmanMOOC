@@ -18,7 +18,7 @@ public class Hangman : MonoBehaviour
     public Transform wordParent;
 
     public int leftCharacters;
-    public bool correctGuess, gameOver = false, win = false, restart = false;
+    public bool correctGuess, gameOver = false, win = false, restart = false, wantsToRestart = false;
     public List<char> triedCharacters;
     public TextMeshProUGUI triedText;
     public Image hangmanImage;
@@ -55,7 +55,7 @@ public class Hangman : MonoBehaviour
             Debug.LogFormat("Dictation hypothesis: {0} with confidence: {1}", text, confidence);
             if (restartWords.Contains(text.ToLower()))
             {
-                restart = true;
+                wantsToRestart = true;
             }
             else 
             {
@@ -71,12 +71,27 @@ public class Hangman : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return) || restart)
+        if (wantsToRestart)
+        {
+            if (Input.GetKeyDown(KeyCode.Return))
+            {
+                Debug.Log("Reset");
+                restart = true;
+                wantsToRestart = false;
+            }
+            else if (Input.GetKeyDown(KeyCode.Escape)) 
+            {
+                Debug.Log("Escape");
+                wantsToRestart = false;
+            }
+        }
+        else if (Input.GetKeyDown(KeyCode.Return) || restart)
         {   
             if (dictationRecognizer.Status == SpeechSystemStatus.Running) 
             {
                 dictationRecognizer.Stop();
             }
+            Debug.Log("Restart Game");
             //Restart
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         } 
