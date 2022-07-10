@@ -75,6 +75,11 @@ public class Hangman : MonoBehaviour
     {
         if (wantsToRestart)
         {
+            if (dictationRecognizer.Status == SpeechSystemStatus.Running) 
+            {
+                dictationRecognizer.Stop();
+            }
+            
             if (Input.GetKeyDown(KeyCode.Return))
             {
                 Debug.Log("Reset");
