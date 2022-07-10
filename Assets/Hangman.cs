@@ -19,6 +19,7 @@ public class Hangman : MonoBehaviour
 
     public int leftCharacters;
     public bool correctGuess, gameOver = false, win = false, restart = false, wantsToRestart = false;
+    public GameObject restartPanel;
     public List<char> triedCharacters;
     public TextMeshProUGUI triedText;
     public Image hangmanImage;
@@ -56,6 +57,7 @@ public class Hangman : MonoBehaviour
             if (restartWords.Contains(text.ToLower()))
             {
                 wantsToRestart = true;
+                restartPanel.SetActive(true);
             }
             else 
             {
@@ -83,6 +85,7 @@ public class Hangman : MonoBehaviour
             {
                 Debug.Log("Escape");
                 wantsToRestart = false;
+                restartPanel.SetActive(false);
             }
         }
         else if (Input.GetKeyDown(KeyCode.Return) || restart)
