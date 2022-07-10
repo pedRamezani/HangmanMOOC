@@ -13,7 +13,7 @@ public class Hangman : MonoBehaviour
     public char[] alphabet = "ABCDEFGHIJKLMNOPQRSTUWVXYZ".ToCharArray();
 
     public string[] words;
-    public List<string> restartWords =  new List<string> {"restart", "neustart"};
+    public List<string> restartWords =  new List<string> {"reset", "restart", "neustart"};
     public Transform characterTemplate;
     public Transform wordParent;
 
@@ -48,12 +48,12 @@ public class Hangman : MonoBehaviour
         triedText.richText = true;
         triedText.text = string.Join(", ", alphabet);
 
-        dictationRecognizer = new DictationRecognizer(ConfidenceLevel.High, DictationTopicConstraint.Dictation);
+        dictationRecognizer = new DictationRecognizer();
 
         dictationRecognizer.DictationResult += (text, confidence) =>
         {
             Debug.LogFormat("Dictation hypothesis: {0} with confidence: {1}", text, confidence);
-            if (restartWords.Contains(text))
+            if (restartWords.Contains(text.ToLower()))
             {
                 restart = true;
             }
@@ -73,6 +73,10 @@ public class Hangman : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Return) || restart)
         {   
+            if (dictationRecognizer.Status == SpeechSystemStatus.Running) 
+            {
+                dictationRecognizer.Stop();
+            }
             //Restart
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         } 
