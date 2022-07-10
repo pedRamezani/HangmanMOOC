@@ -13,11 +13,12 @@ public class Hangman : MonoBehaviour
     public char[] alphabet = "ABCDEFGHIJKLMNOPQRSTUWVXYZ".ToCharArray();
 
     public string[] words;
+    public List<string> restartWords = ["restart", "neustart"];
     public Transform characterTemplate;
     public Transform wordParent;
 
     public int leftCharacters;
-    public bool correctGuess, gameOver = false, win = false;
+    public bool correctGuess, gameOver = false, win = false, restart = false;
     public List<char> triedCharacters;
     public TextMeshProUGUI triedText;
     public Image hangmanImage;
@@ -51,23 +52,29 @@ public class Hangman : MonoBehaviour
 
         dictationRecognizer.DictationResult += (text, confidence) =>
         {
-            Debug.LogFormat("Dictation hypothesis: {0} with confidence: {1}", text, confidence);
-            Guess(text[0]);
-            for (int i = 0; i < wordParent.childCount; i++)
+            if (restartWords.Contains(text))
             {
-                wordParent.GetChild(i).GetComponent<Character>().Guess(text);
+                restart = true;
             }
+            else 
+            {
+                Debug.LogFormat("Dictation hypothesis: {0} with confidence: {1}", text, confidence);
+                Guess(text[0]);
+                for (int i = 0; i < wordParent.childCount; i++)
+                {
+                    wordParent.GetChild(i).GetComponent<Character>().Guess(text);
+                }
+            }
+            
         };
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return)) 
+        if (Input.GetKeyDown(KeyCode.Return) || restart)
         {   
             //Restart
-            if (gameOver) {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            }
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         } 
         else if (Input.GetKeyDown(KeyCode.Space)) 
         {   
