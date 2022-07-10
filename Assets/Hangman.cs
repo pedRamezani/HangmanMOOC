@@ -17,7 +17,7 @@ public class Hangman : MonoBehaviour
     public Transform wordParent;
 
     public int leftCharacters;
-    public bool win;
+    public bool correctGuess, gameOver = false, win = false;
     public List<char> triedCharacters;
     public TextMeshProUGUI triedText;
     public Image hangmanImage;
@@ -65,7 +65,9 @@ public class Hangman : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Return)) 
         {   
             //Restart
-            if (leftCharacters == 0) SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            if (gameOver) {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            }
         } 
         else if (Input.GetKeyDown(KeyCode.Space)) 
         {   
@@ -118,27 +120,36 @@ public class Hangman : MonoBehaviour
                 }
             }
             
-            if (!win) 
+            if (!correctGuess) 
             {
                 hangmanFrame++;
                 if (hangmanFrame >= MAX_FRAMES) 
                 {
                     hangmanFrame = MAX_FRAMES;
                     // Verloren
-                    GameOver();
+                    GameOver(false);
                 }
                 hangmanImage.sprite = hangmanSprite[hangmanFrame];
+            } 
+            else if (leftCharacters == 0) 
+            {
+                GameOver(true);
             }
-            win = false;
+            correctGuess = false;
         }
     }
 
-    void GameOver()
+    void GameOver(bool hasWon)
     {
-        for (int i = 0; i < wordParent.childCount; i++)
-        {
-            wordParent.GetChild(i).GetComponent<Character>().ShowCharacter();
+
+        if (!hasWon) {
+            for (int i = 0; i < wordParent.childCount; i++)
+            {
+                wordParent.GetChild(i).GetComponent<Character>().ShowCharacter();
+            }
         }
-        leftCharacters = 0;
+        
+        win = hasWon;
+        gameOver = true;
     }
 }

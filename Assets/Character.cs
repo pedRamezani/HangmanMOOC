@@ -24,7 +24,7 @@ public class Character : MonoBehaviour
             {
                 text.text = character.ToString().ToUpper();
                 manager.leftCharacters--;
-                manager.win = true;
+                manager.correctGuess = true;
             }
         }
     }
