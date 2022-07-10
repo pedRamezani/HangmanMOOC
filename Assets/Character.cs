@@ -20,25 +20,30 @@ public class Character : MonoBehaviour
         // TODO: Fix Fission => not working correctly
         if (Input.GetKeyDown(character.ToString().ToLower()) && !Input.GetKeyDown(KeyCode.Space)) 
         {
-            if (text.text == "") 
-            {
-                text.text = character.ToString().ToUpper();
-                manager.leftCharacters--;
-                manager.correctGuess = true;
-            }
+            RevealCharacter();
         }
     }
 
     public void Guess(string c)
     {
-        if (text.text == "" && c.ToLower()[0] == character.ToString().ToLower()[0]) 
-            {
-                text.text = character.ToString().ToUpper();
-                manager.leftCharacters--;
-                manager.win = true;
-            }
+        if (c.ToLower()[0] == character.ToString().ToLower()[0]) 
+        {
+            RevealCharacter();
+        }
     }
 
+    // Correct Guess
+    void RevealCharacter()
+    {
+        if (text.text == "")
+        {
+            text.text = character.ToString().ToUpper();
+            manager.leftCharacters--;
+            manager.correctGuess = true;
+        }
+    }
+
+    // After Loosing
     public void ShowCharacter()
     {
         if (text.text == "")
