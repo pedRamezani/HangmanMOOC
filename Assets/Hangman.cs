@@ -22,8 +22,11 @@ public class Hangman : MonoBehaviour
     public GameObject restartPanel;
     public List<char> triedCharacters;
     public TextMeshProUGUI triedText;
+    public TextMeshProUGUI scoreText;
     public Image hangmanImage;
     public Sprite[] hangmanSprite;
+    public Sprite winSprite;
+    public Sprite looseSprite;
     public int hangmanFrame;
 
     public static int MAX_FRAMES = 9; 
@@ -69,6 +72,13 @@ public class Hangman : MonoBehaviour
             }
             
         };
+
+        UpdateScore();
+    }
+
+    void UpdateScore()
+    {
+        scoreText.text = "Won: " + Score.winCounter + "\nLoose: " + Score.looseCounter;
     }
 
     void Update()
@@ -117,7 +127,7 @@ public class Hangman : MonoBehaviour
                 dictationRecognizer.Stop();
             }
         }
-        else if (Input.anyKeyDown) 
+        else if (Input.anyKeyDown && !gameOver) 
         {
             if (Input.inputString.ToCharArray().Length > 0)
             {
@@ -156,6 +166,7 @@ public class Hangman : MonoBehaviour
             
             if (!correctGuess) 
             {
+                hangmanImage.sprite = hangmanSprite[hangmanFrame];
                 hangmanFrame++;
                 if (hangmanFrame >= MAX_FRAMES) 
                 {
@@ -163,7 +174,6 @@ public class Hangman : MonoBehaviour
                     // Verloren
                     GameOver(false);
                 }
-                hangmanImage.sprite = hangmanSprite[hangmanFrame];
             } 
             else if (leftCharacters == 0) 
             {
@@ -181,7 +191,16 @@ public class Hangman : MonoBehaviour
             {
                 wordParent.GetChild(i).GetComponent<Character>().ShowCharacter();
             }
+            Score.looseCounter += 1;
+            hangmanImage.sprite = looseSprite;
         }
+        else
+        {
+            Score.winCounter += 1;
+            hangmanImage.sprite = winSprite;
+        }
+
+        UpdateScore();
         
         win = hasWon;
         gameOver = true;
