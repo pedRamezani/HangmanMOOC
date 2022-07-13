@@ -32,11 +32,12 @@ public class Hangman : MonoBehaviour
     public static int MAX_FRAMES = 9; 
 
     private DictationRecognizer dictationRecognizer;
-
+    char[] word;
     void Start()
     {
         words = GetComponent<EnglishWords>().all.Where(s => s.Length >= 5 && s.Length < 15).ToArray();
-        char[] word = words[UnityEngine.Random.Range(0, words.Length)].ToCharArray();
+        word = words[UnityEngine.Random.Range(0, words.Length)].ToCharArray();
+        Debug.LogFormat("Word is {0}", new string(word));
         leftCharacters = word.Length;
 
         foreach (char character in word)
@@ -56,13 +57,23 @@ public class Hangman : MonoBehaviour
 
         dictationRecognizer.DictationResult += (text, confidence) =>
         {
-            Debug.LogFormat("Dictation hypothesis: {0} with confidence: {1}", text, confidence);
-            if (restartWords.Contains(text.ToLower()))
+            Debug.LogFormat("Dictation Result: {0} with confidence: {1}", text, confidence);
+            string searchingword = new string(word); //char[] conv to string
+
+            if (restartWords.Contains(text.ToLower()))                                  //checks if want to get nect word
             {
                 wantsToRestart = true;
                 restartPanel.SetActive(true);
             }
-            else 
+            else if (text.ToLower().Equals(searchingword.ToLower())) {                  //checks if oral word ist the solution
+                Debug.LogFormat("Es ist gleich");
+                for (int i = 0; i < wordParent.childCount; i++)
+                {
+                    wordParent.GetChild(i).GetComponent<Character>().ShowCharacterOral();
+                }
+                GameOver(true);
+            }
+            else                                                                        //checks the letter
             {
                 Guess(text[0]);
                 for (int i = 0; i < wordParent.childCount; i++)

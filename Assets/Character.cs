@@ -52,4 +52,12 @@ public class Character : MonoBehaviour
             text.alpha = 0.5f;
         }
     }
+    public void ShowCharacterOral()
+    {
+        if (text.text == "")
+        {
+            text.text = character.ToString().ToUpper();
+            text.alpha = 1f;
+        }
+    }
 }
