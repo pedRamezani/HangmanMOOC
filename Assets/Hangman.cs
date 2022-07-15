@@ -27,14 +27,15 @@ public class Hangman : MonoBehaviour
     public Sprite[] hangmanSprite;
     public Sprite winSprite;
     public Sprite looseSprite;
-    public int hangmanFrame;
+    public int hangmanFrame = -1;
 
-    public static int MAX_FRAMES = 9; 
-
+    private int MAX_FRAMES; 
     private DictationRecognizer dictationRecognizer;
-    char[] word;
+    private char[] word;
+
     void Start()
     {
+        MAX_FRAMES = hangmanSprite.Length;
         words = GetComponent<EnglishWords>().all.Where(s => s.Length >= 5 && s.Length < 15).ToArray();
         word = words[UnityEngine.Random.Range(0, words.Length)].ToCharArray();
         Debug.LogFormat("Word is {0}", new string(word));
@@ -58,14 +59,14 @@ public class Hangman : MonoBehaviour
         dictationRecognizer.DictationResult += (text, confidence) =>
         {
             Debug.LogFormat("Dictation Result: {0} with confidence: {1}", text, confidence);
-            string searchingword = new string(word); //char[] conv to string
+            string searchingWord = new string(word); //char[] conv to string
 
             if (restartWords.Contains(text.ToLower()))                                  //checks if want to get nect word
             {
                 wantsToRestart = true;
                 restartPanel.SetActive(true);
             }
-            else if (text.ToLower().Equals(searchingword.ToLower())) {                  //checks if oral word ist the solution
+            else if (text.ToLower().Equals(searchingWord.ToLower())) {                  //checks if oral word ist the solution
                 Debug.LogFormat("Es ist gleich");
                 for (int i = 0; i < wordParent.childCount; i++)
                 {
@@ -177,13 +178,16 @@ public class Hangman : MonoBehaviour
             
             if (!correctGuess) 
             {
-                hangmanImage.sprite = hangmanSprite[hangmanFrame];
                 hangmanFrame++;
                 if (hangmanFrame >= MAX_FRAMES) 
                 {
                     hangmanFrame = MAX_FRAMES;
                     // Verloren
                     GameOver(false);
+                }
+                else 
+                {
+                    hangmanImage.sprite = hangmanSprite[hangmanFrame];
                 }
             } 
             else if (leftCharacters == 0) 
