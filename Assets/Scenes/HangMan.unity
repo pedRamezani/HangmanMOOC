@@ -123,6 +123,293 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &243710098
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 243710099}
+  - component: {fileID: 243710101}
+  - component: {fileID: 243710100}
+  m_Layer: 5
+  m_Name: TitleSprite
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &243710099
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243710098}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.35, y: 0.35, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 916610778}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -20}
+  m_SizeDelta: {x: 0, y: -20}
+  m_Pivot: {x: 0.5, y: 1}
+--- !u!114 &243710100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243710098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 867892009178a514c9420122694cfcc3, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &243710101
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243710098}
+  m_CullTransparentMesh: 1
+--- !u!1 &286019509
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 286019510}
+  - component: {fileID: 286019512}
+  - component: {fileID: 286019511}
+  m_Layer: 5
+  m_Name: Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &286019510
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286019509}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 556010764}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &286019511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286019509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: a5d85a1e8e1127e488d7b476c03ae06d, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &286019512
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286019509}
+  m_CullTransparentMesh: 1
+--- !u!1 &352072548
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 352072549}
+  - component: {fileID: 352072551}
+  - component: {fileID: 352072550}
+  m_Layer: 5
+  m_Name: Info
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &352072549
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 352072548}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 969307481}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 10}
+  m_SizeDelta: {x: 0, y: -20}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &352072550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 352072548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Press Enter/Escape to Confirm/Cancel
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: c2f930922c0248e41ba2e16c2610c9ff, type: 2}
+  m_sharedMaterial: {fileID: -3327090855554319225, guid: c2f930922c0248e41ba2e16c2610c9ff, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 25
+  m_fontSizeBase: 25
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 1024
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &352072551
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 352072548}
+  m_CullTransparentMesh: 1
 --- !u!1 &407540155
 GameObject:
   m_ObjectHideFlags: 0
@@ -133,7 +420,7 @@ GameObject:
   m_Component:
   - component: {fileID: 407540156}
   m_Layer: 5
-  m_Name: Hangman
+  m_Name: HangmanSpriteArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -154,7 +441,7 @@ RectTransform:
   - {fileID: 1534769846}
   - {fileID: 1492232728}
   m_Father: {fileID: 916610778}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -245,6 +532,244 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &520215444
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 520215445}
+  - component: {fileID: 520215447}
+  - component: {fileID: 520215446}
+  m_Layer: 5
+  m_Name: Score
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &520215445
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 520215444}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 916610778}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -10, y: -10}
+  m_SizeDelta: {x: -20, y: -20.00003}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &520215446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 520215444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'Won: 100
+
+    Lost: 100'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 89fa9b2a9eb09d34e8c09f3f878c58dc, type: 2}
+  m_sharedMaterial: {fileID: 5135051766350635614, guid: 89fa9b2a9eb09d34e8c09f3f878c58dc, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 2
+  m_HorizontalAlignment: 4
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &520215447
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 520215444}
+  m_CullTransparentMesh: 1
+--- !u!1 &556010760
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 556010764}
+  - component: {fileID: 556010763}
+  - component: {fileID: 556010762}
+  - component: {fileID: 556010761}
+  m_Layer: 5
+  m_Name: Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &556010761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556010760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &556010762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556010760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &556010763
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556010760}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &556010764
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556010760}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 286019510}
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1 &691076892
 GameObject:
   m_ObjectHideFlags: 0
@@ -262,7 +787,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &691076893
 RectTransform:
   m_ObjectHideFlags: 0
@@ -305,8 +830,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: HANGMAN
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c2f930922c0248e41ba2e16c2610c9ff, type: 2}
+  m_sharedMaterial: {fileID: -3327090855554319225, guid: c2f930922c0248e41ba2e16c2610c9ff, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -393,8 +918,9 @@ GameObject:
   - component: {fileID: 916610776}
   - component: {fileID: 916610775}
   - component: {fileID: 916610774}
+  - component: {fileID: 916610779}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Overlay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -412,28 +938,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3162feacaa61a8247842b12177e9b058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  words:
-  - Hello
-  - Test
-  - MOOC
+  alphabet: 4100420043004400450046004700480049004a004b004c004d004e004f0050005100520053005400550057005600580059005a00
+  words: []
+  restartWords:
+  - reset
+  - restart
+  - neustart
   characterTemplate: {fileID: 4804972510090727481, guid: 34006462820d315409f6e5c6b2dd5edf, type: 3}
   wordParent: {fileID: 1643285523}
   leftCharacters: 0
+  correctGuess: 0
+  gameOver: 0
   win: 0
+  restart: 0
+  wantsToRestart: 0
+  restartPanel: {fileID: 969307480}
   triedCharacters: 
   triedText: {fileID: 1492232730}
+  scoreText: {fileID: 520215446}
   hangmanImage: {fileID: 1534769844}
   hangmanSprite:
-  - {fileID: 942273396, guid: 2ddf62223ebb4a24cb323e10238e441f, type: 3}
-  - {fileID: 1121167895, guid: 2ddf62223ebb4a24cb323e10238e441f, type: 3}
-  - {fileID: -1437349928, guid: 2ddf62223ebb4a24cb323e10238e441f, type: 3}
-  - {fileID: 710814072, guid: 2ddf62223ebb4a24cb323e10238e441f, type: 3}
-  - {fileID: -22308575, guid: 2ddf62223ebb4a24cb323e10238e441f, type: 3}
-  - {fileID: -2108475335, guid: 2ddf62223ebb4a24cb323e10238e441f, type: 3}
-  - {fileID: 1444778736, guid: 2ddf62223ebb4a24cb323e10238e441f, type: 3}
-  - {fileID: 480375856, guid: 2ddf62223ebb4a24cb323e10238e441f, type: 3}
-  - {fileID: -892234289, guid: 2ddf62223ebb4a24cb323e10238e441f, type: 3}
-  - {fileID: 974852445, guid: 2ddf62223ebb4a24cb323e10238e441f, type: 3}
+  - {fileID: 21300000, guid: 60adc46728243e74db3af1aa4b13c964, type: 3}
+  - {fileID: 21300000, guid: 49dd6dab841fc6c459722961d1bc72b4, type: 3}
+  - {fileID: 21300000, guid: d3798741f07210944a10ecd5b08f0ddb, type: 3}
+  - {fileID: 21300000, guid: ebb1ab8496764364ca923e2f6d939cb7, type: 3}
+  - {fileID: 21300000, guid: 084c6d81a43fc8745a9cf814318d378b, type: 3}
+  - {fileID: 21300000, guid: 45fecc6ecf7fe3242823e9c2a2d20c67, type: 3}
+  - {fileID: 21300000, guid: b61ebd7ea157b554fa33d319c4b84bc7, type: 3}
+  - {fileID: 21300000, guid: d550938135772c440a6647131cbb57fd, type: 3}
+  - {fileID: 21300000, guid: 6f50bec515432bf41bd9121a8aba854a, type: 3}
+  - {fileID: 21300000, guid: d51b19435c882ee43aac33a31d351a29, type: 3}
+  winSprite: {fileID: 21300000, guid: 8095fb266ab50ad44bf21c38d6a8beae, type: 3}
+  looseSprite: {fileID: 21300000, guid: 52135029ca1e5a7479d517c83079d92b, type: 3}
   hangmanFrame: 0
 --- !u!114 &916610775
 MonoBehaviour:
@@ -508,9 +1044,12 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1643285523}
+  - {fileID: 243710099}
   - {fileID: 691076893}
+  - {fileID: 520215445}
   - {fileID: 407540156}
+  - {fileID: 1643285523}
+  - {fileID: 969307481}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -519,6 +1058,1230 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &916610779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916610773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0768e6a5a2a778a4ba7b903b9c9376c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  all:
+  - able
+  - about
+  - again
+  - air
+  - all
+  - always
+  - and
+  - answer
+  - any
+  - around
+  - as
+  - ask
+  - at
+  - back
+  - be
+  - before
+  - best
+  - better
+  - between
+  - black
+  - body
+  - book
+  - boy
+  - brother
+  - but
+  - call
+  - can
+  - car
+  - careful
+  - cat
+  - chair
+  - chance
+  - cheese
+  - child
+  - cinema
+  - clean
+  - clear
+  - close
+  - cold
+  - come
+  - could
+  - country
+  - cry
+  - cut
+  - dance
+  - daughter
+  - day
+  - dinner
+  - do
+  - doctor
+  - document
+  - dog
+  - door
+  - down
+  - dream
+  - drink
+  - each
+  - easy
+  - eat
+  - egg
+  - eight
+  - end
+  - everything
+  - explain
+  - eye
+  - face
+  - family
+  - father
+  - find
+  - fire
+  - first
+  - for
+  - friend
+  - from
+  - game
+  - get
+  - girl
+  - give
+  - go
+  - good
+  - hand
+  - he
+  - head
+  - help
+  - her
+  - his
+  - home
+  - idea
+  - if
+  - important
+  - in
+  - information
+  - inside
+  - interesting
+  - it
+  - job
+  - kind
+  - know
+  - land
+  - learn
+  - life
+  - light
+  - live
+  - long
+  - make
+  - man
+  - many
+  - may
+  - money
+  - more
+  - morning
+  - move
+  - my
+  - name
+  - new
+  - no
+  - now
+  - often
+  - one
+  - open
+  - or
+  - out
+  - page
+  - paper
+  - park
+  - pay
+  - peace
+  - pen
+  - people
+  - person
+  - picture
+  - place
+  - play
+  - please
+  - popular
+  - prefer
+  - problem
+  - put
+  - question
+  - reach
+  - read
+  - ready
+  - red
+  - rest
+  - rich
+  - right
+  - river
+  - road
+  - room
+  - run
+  - same
+  - say
+  - school
+  - second
+  - see
+  - send
+  - set
+  - she
+  - ship
+  - shop
+  - should
+  - show
+  - sit
+  - small
+  - so
+  - some
+  - son
+  - soon
+  - speak
+  - stand
+  - start
+  - stone
+  - stop
+  - student
+  - such
+  - table
+  - that
+  - the
+  - there
+  - they
+  - thing
+  - think
+  - this
+  - time
+  - today
+  - two
+  - understand
+  - up
+  - very
+  - visit
+  - wait
+  - want
+  - we
+  - what
+  - where
+  - why
+  - word
+  - work
+  - write
+  - "you\tacross"
+  - action
+  - after
+  - against
+  - age
+  - almost
+  - alone
+  - already
+  - also
+  - anything
+  - army
+  - art
+  - away
+  - bad
+  - beautiful
+  - because
+  - become
+  - bed
+  - big
+  - box
+  - bread
+  - breakfast
+  - bring
+  - bus
+  - buy
+  - camera
+  - care
+  - carry
+  - catch
+  - cause
+  - certain
+  - change
+  - chief
+  - church
+  - city
+  - class
+  - company
+  - confirm
+  - continue
+  - control
+  - corner
+  - cost
+  - cover
+  - culture
+  - dead
+  - dear
+  - decision
+  - deep
+  - describe
+  - desert
+  - die
+  - difficult
+  - distance
+  - dress
+  - drive
+  - dry
+  - east
+  - education
+  - enjoy
+  - enough
+  - evening
+  - every
+  - example
+  - expect
+  - expensive
+  - fact
+  - fast
+  - feel
+  - few
+  - fight
+  - flower
+  - food
+  - free
+  - full
+  - garage
+  - garden
+  - gold
+  - great
+  - green
+  - group
+  - happy
+  - hard
+  - have
+  - here
+  - hope
+  - house
+  - how
+  - ill
+  - impossible
+  - include
+  - industry
+  - interest
+  - into
+  - invite
+  - island
+  - journey
+  - juice
+  - keep
+  - late
+  - leave
+  - let
+  - letter
+  - like
+  - look
+  - meet
+  - member
+  - miss
+  - moment
+  - month
+  - most
+  - mother
+  - much
+  - must
+  - need
+  - never
+  - next
+  - nothing
+  - old
+  - on
+  - only
+  - other
+  - own
+  - part
+  - personal
+  - phone
+  - plan
+  - player
+  - police
+  - position
+  - possible
+  - power
+  - present
+  - president
+  - pretty
+  - price
+  - product
+  - provide
+  - public
+  - quite
+  - rather
+  - real
+  - reason
+  - receive
+  - record
+  - remain
+  - remember
+  - report
+  - result
+  - return
+  - round
+  - sad
+  - save
+  - sea
+  - seat
+  - service
+  - several
+  - shall
+  - side
+  - single
+  - sister
+  - sleep
+  - something
+  - sorry
+  - sound
+  - south
+  - spring
+  - star
+  - stay
+  - story
+  - street
+  - strong
+  - study
+  - sun
+  - sweet
+  - system
+  - take
+  - talk
+  - teacher
+  - tell
+  - their
+  - then
+  - through
+  - together
+  - too
+  - true
+  - try
+  - under
+  - use
+  - view
+  - voice
+  - water
+  - way
+  - week
+  - which
+  - who
+  - wife
+  - with
+  - woman
+  - world
+  - "yes\tabove"
+  - accident
+  - act
+  - add
+  - address
+  - ago
+  - airport
+  - along
+  - among
+  - another
+  - appear
+  - apple
+  - arm
+  - baby
+  - bear
+  - begin
+  - behind
+  - believe
+  - blood
+  - blue
+  - both
+  - break
+  - building
+  - built
+  - business
+  - card
+  - case
+  - central
+  - century
+  - check
+  - chicken
+  - choose
+  - clock
+  - collect
+  - colour
+  - common
+  - computer
+  - condition
+  - consider
+  - course
+  - court
+  - crazy
+  - cross
+  - cup
+  - dangerous
+  - dark
+  - decide
+  - depend
+  - desk
+  - different
+  - direct
+  - direction
+  - discuss
+  - dollar
+  - draw
+  - during
+  - ear
+  - early
+  - earth
+  - edge
+  - effect
+  - even
+  - ever
+  - examine
+  - exchange
+  - fall
+  - field
+  - film
+  - fine
+  - fish
+  - floor
+  - fly
+  - form
+  - fruit
+  - general
+  - gift
+  - glad
+  - glass
+  - government
+  - grow
+  - half
+  - happen
+  - hear
+  - heart
+  - high
+  - hold
+  - hour
+  - ice
+  - illness
+  - imagine
+  - immediately
+  - increase
+  - inform
+  - insect
+  - introduce
+  - jump
+  - just
+  - key
+  - less
+  - line
+  - little
+  - love
+  - low
+  - magazine
+  - mark
+  - material
+  - mean
+  - meat
+  - meeting
+  - milk
+  - mind
+  - minute
+  - nature
+  - near
+  - not
+  - number
+  - off
+  - office
+  - once
+  - order
+  - over
+  - parent
+  - party
+  - pass
+  - past
+  - patient
+  - pencil
+  - perhaps
+  - piece
+  - pink
+  - plate
+  - poor
+  - post
+  - produce
+  - protect
+  - pull
+  - purpose
+  - quick
+  - race
+  - radio
+  - rain
+  - really
+  - remove
+  - reply
+  - respect
+  - ride
+  - ring
+  - rise
+  - rock
+  - search
+  - secret
+  - sell
+  - sense
+  - sharp
+  - shoe
+  - short
+  - similar
+  - simple
+  - since
+  - situation
+  - slow
+  - smile
+  - snow
+  - sometimes
+  - song
+  - speed
+  - sport
+  - state
+  - station
+  - still
+  - success
+  - sugar
+  - summer
+  - sure
+  - tall
+  - tea
+  - television
+  - test
+  - than
+  - though
+  - ticket
+  - town
+  - travel
+  - tree
+  - turn
+  - upon
+  - usual
+  - valley
+  - value
+  - virus
+  - walk
+  - war
+  - watch
+  - well
+  - when
+  - while
+  - will
+  - window
+  - would
+  - your
+  - accept
+  - account
+  - actor
+  - advance
+  - advantage
+  - afternoon
+  - agree
+  - amount
+  - angry
+  - arrange
+  - article
+  - attack
+  - available
+  - bag
+  - bank
+  - below
+  - bird
+  - boat
+  - borrow
+  - bottle
+  - bridge
+  - brown
+  - build
+  - busy
+  - butter
+  - cake
+  - captain
+  - centre
+  - cheap
+  - chocolate
+  - choice
+  - cigarette
+  - cloth
+  - cloud
+  - club
+  - coast
+  - coat
+  - coffee
+  - college
+  - comfortable
+  - cottage
+  - cream
+  - crowd
+  - customer
+  - damage
+  - date
+  - deal
+  - degree
+  - demand
+  - department
+  - design
+  - destroy
+  - detail
+  - dirty
+  - dust
+  - earn
+  - enemy
+  - engine
+  - enter
+  - escape
+  - especially
+  - everywhere
+  - except
+  - exercise
+  - expression
+  - factory
+  - famous
+  - farm
+  - favourite
+  - finger
+  - finish
+  - follow
+  - front
+  - future
+  - gas
+  - gate
+  - gentle
+  - gentleman
+  - ground
+  - guide
+  - hair
+  - hat
+  - history
+  - holiday
+  - hospital
+  - hotel
+  - hungry
+  - illegal
+  - image
+  - improve
+  - independent
+  - individual
+  - injure
+  - instrument
+  - interview
+  - joke
+  - kitchen
+  - knife
+  - language
+  - large
+  - law
+  - left
+  - lesson
+  - listen
+  - machine
+  - map
+  - market
+  - marry
+  - meal
+  - message
+  - mistake
+  - moon
+  - music
+  - newspaper
+  - nice
+  - night
+  - nose
+  - object
+  - obtain
+  - ocean
+  - oil
+  - orange
+  - pain
+  - paint
+  - parcel
+  - path
+  - peaceful
+  - perfect
+  - petrol
+  - plane
+  - plant
+  - pleasure
+  - practise
+  - prepare
+  - prison
+  - private
+  - probably
+  - proud
+  - quiet
+  - recently
+  - refuse
+  - relationship
+  - religion
+  - repair
+  - repeat
+  - replace
+  - request
+  - responsible
+  - restaurant
+  - rice
+  - salt
+  - science
+  - season
+  - seem
+  - serious
+  - serve
+  - shape
+  - shoulder
+  - sick
+  - silver
+  - size
+  - skirt
+  - sky
+  - smart
+  - smoke
+  - society
+  - special
+  - spend
+  - square
+  - step
+  - store
+  - strange
+  - subject
+  - successful
+  - supply
+  - swim
+  - taste
+  - teach
+  - temperature
+  - thank
+  - tired
+  - tomorrow
+  - top
+  - touch
+  - train
+  - trip
+  - uncle
+  - university
+  - usually
+  - vegetable
+  - village
+  - wall
+  - warm
+  - wash
+  - weather
+  - welcome
+  - win
+  - winter
+  - wrong
+  - yesterday
+  - admire
+  - admit
+  - adventure
+  - afraid
+  - allow
+  - although
+  - animal
+  - area
+  - arrive
+  - asleep
+  - attempt
+  - attend
+  - attitude
+  - average
+  - bath
+  - battle
+  - beer
+  - belong
+  - bill
+  - board
+  - born
+  - bottom
+  - branch
+  - brave
+  - breathe
+  - calm
+  - careless
+  - certainly
+  - chain
+  - character
+  - charge
+  - circle
+  - climb
+  - clothes
+  - coal
+  - coin
+  - comfort
+  - complete
+  - consist
+  - contain
+  - cook
+  - copy
+  - correct
+  - count
+  - crime
+  - death
+  - declare
+  - defend
+  - delay
+  - discover
+  - dish
+  - divide
+  - double
+  - doubt
+  - drop
+  - duty
+  - effort
+  - either
+  - English
+  - equal
+  - event
+  - exact
+  - experience
+  - express
+  - fail
+  - farmer
+  - fat
+  - flat
+  - foot
+  - foreign
+  - forget
+  - fresh
+  - funny
+  - goal
+  - grey
+  - guard
+  - guess
+  - guest
+  - gun
+  - hate
+  - health
+  - heavy
+  - hide
+  - hole
+  - horse
+  - hot
+  - husband
+  - import
+  - indeed
+  - influence
+  - instead
+  - intelligent
+  - international
+  - iron
+  - jacket
+  - join
+  - kill
+  - lake
+  - last
+  - laugh
+  - leader
+  - leg
+  - lie
+  - lose
+  - main
+  - marriage
+  - match
+  - measure
+  - medicine
+  - metal
+  - middle
+  - mine
+  - modern
+  - mountain
+  - necessary
+  - nervous
+  - noise
+  - offer
+  - operation
+  - opinion
+  - opposite
+  - outside
+  - pair
+  - passenger
+  - perform
+  - pile
+  - pity
+  - plain
+  - pleasant
+  - plenty
+  - point
+  - politics
+  - pound
+  - pour
+  - press
+  - prize
+  - profit
+  - promise
+  - prove
+  - raise
+  - recent
+  - reduce
+  - regard
+  - regular
+  - risk
+  - roll
+  - rough
+  - row
+  - rule
+  - rush
+  - safe
+  - score
+  - secretary
+  - series
+  - share
+  - shoot
+  - shut
+  - sign
+  - sing
+  - smell
+  - smooth
+  - soft
+  - soldier
+  - somewhere
+  - space
+  - speech
+  - spoil
+  - spot
+  - spread
+  - steal
+  - straight
+  - suddenly
+  - suggest
+  - suit
+  - support
+  - surface
+  - these
+  - thick
+  - thin
+  - third
+  - those
+  - toilet
+  - trade
+  - trouble
+  - trust
+  - type
+  - until
+  - useful
+  - variety
+  - various
+  - vote
+  - west
+  - whose
+  - wild
+  - wish
+  - without
+  - wonderful
+  - wood
+  - year
+  - young
+--- !u!1 &969307480
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 969307481}
+  - component: {fileID: 969307483}
+  - component: {fileID: 969307482}
+  m_Layer: 5
+  m_Name: Restart
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &969307481
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 969307480}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1408762461}
+  - {fileID: 352072549}
+  m_Father: {fileID: 916610778}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0.000030517578}
+  m_SizeDelta: {x: 0, y: 0.000030517578}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &969307482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 969307480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.78431374}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &969307483
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 969307480}
+  m_CullTransparentMesh: 1
+--- !u!1 &1408762460
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1408762461}
+  - component: {fileID: 1408762463}
+  - component: {fileID: 1408762462}
+  m_Layer: 5
+  m_Name: Question
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1408762461
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408762460}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 969307481}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1600, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1408762462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408762460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "Do You Want \nto Restart?"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: c2f930922c0248e41ba2e16c2610c9ff, type: 2}
+  m_sharedMaterial: {fileID: -3327090855554319225, guid: c2f930922c0248e41ba2e16c2610c9ff, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 60
+  m_fontSizeBase: 60
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1408762463
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408762460}
+  m_CullTransparentMesh: 1
 --- !u!1 &1492232727
 GameObject:
   m_ObjectHideFlags: 0
@@ -531,7 +2294,7 @@ GameObject:
   - component: {fileID: 1492232729}
   - component: {fileID: 1492232730}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Text (Tried Letters)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -587,8 +2350,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 89fa9b2a9eb09d34e8c09f3f878c58dc, type: 2}
+  m_sharedMaterial: {fileID: 5135051766350635614, guid: 89fa9b2a9eb09d34e8c09f3f878c58dc, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -666,7 +2429,7 @@ GameObject:
   - component: {fileID: 1534769845}
   - component: {fileID: 1534769844}
   m_Layer: 5
-  m_Name: Image
+  m_Name: HangmanSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -692,7 +2455,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 942273396, guid: 2ddf62223ebb4a24cb323e10238e441f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: aaa9b01231942434d83f3d5d8331e318, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -741,7 +2504,7 @@ GameObject:
   - component: {fileID: 1643285523}
   - component: {fileID: 1643285524}
   m_Layer: 5
-  m_Name: Word
+  m_Name: GuessWordArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -760,7 +2523,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 916610778}
-  m_RootOrder: 0
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -856,5 +2619,5 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
